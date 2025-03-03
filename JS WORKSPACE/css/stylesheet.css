@@ -5,27 +5,53 @@ body{
 
 }
 
+@media screen and (max-width: 768px) {
+
+    #containers{
+        max-width: auto;
+
+    }
+
+
+    .nav-con{
+        width: 100%;
+
+    }
+}
+  
+
+
+img {
+    max-width: 100%;  /* Ensures the image doesn't overflow */
+    height: auto;     /* Maintains aspect ratio */
+    display: block;   /* Avoids extra space below the image */
+    margin: 0 auto;   /* Centers the image */
+  }
+
 #bgimg{
-    width: 800px;
-    height: 800px;
+    width: auto;
+    max-width: auto;
     position: absolute;
     opacity: .1;
     
 }
 
 #containers{
-    width: 900px;
     padding: 0;
-    height: 840px;
+    max-width: 100%;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 #header-container{
     margin-top: 4px;
+
+
 }
 
 #navbar-container{
     margin-top: 30px;
+    max-width: auto;
+    width: auto;
 }
 
 .prnt-con{
@@ -33,25 +59,27 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
+    width: auto;
+    max-width: 1000px;
 }
 
 .hdr-con{
     box-shadow:0px 0px 0px 0px rgba(0, 0, 0, 0.3);
-}
-
-.hdr-txt-con{
-    position: absolute;
-    height:0px;
-    margin-top: 120px;
-    margin-right: 220px;
-
-}
-
-h1{
-    font-size: 47px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
+}
+
+
+#hdr-txt{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
     font-weight: bold;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    padding: auto;
+    font-size: clamp(5px, 5vw, 40px);
+    font-weight: bold;
+    text-align: center;
 
 }
 
@@ -59,7 +87,7 @@ h1{
     margin:0;
     display: flex;
     justify-content: center;
-    padding: 0;
+
 }
 
 li{
@@ -108,7 +136,7 @@ ul{
 
 }
 .sldr{
-    width: 800px;
+    width: auto;
     height: 400px;
     display: flex;
     justify-content: center;
